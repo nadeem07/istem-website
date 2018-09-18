@@ -13,15 +13,26 @@ body {
 }
 
 img{
-    width: 250%;
+    width: 250% ;
     height:auto;
     margin-left: -15%;
-    margin-top: -14%;
+    margin-top: -14% ;
 }
 
 
+#Sponsors_image{
+ width: 25% !important;
+}
 
+#button1{
+margin-left: 88%;
+}
 
+.grid-container-sponsor{
+  margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left: 19%;
+}
 
 /* To-Do tab CSS start */
 
