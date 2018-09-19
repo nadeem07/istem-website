@@ -82,13 +82,28 @@
 
 
   <!-- ToDo List conatiner start here -->
- <div>
-    <h2 class="headerproduct">Inclusive STEM Hackathon</h2>
+  <div>
+    <h2 class="headerproduct">Inclusive STEM Hackathon  <button type="button" id="button1">Join 2019 Hackathon</button></h2>
   </div>
+
+  <div>
+    <select id="selectHackathon"  onchange="window.location.href=this.value;">
+      <option value="21">Previous Hackathon</option>
+      <option value="Temp.html">2017 Hackathon</option>
+      <option value="Temp.html">2018 Hackathon</option>
+    </select>
+
+
+    <!-- <select id="selectHackathon" onchange="window.location.href=this.value;">
+      <option value="21">Previous Hackathon</option>
+      <option value="https://www.google.com/">2017 Hackathon</option>
+      <option value="2018">2018 Hackathon</option>
+    </select> -->
+  </div>
+ 
 
 
   <div class="grid-container-products">
-
     <div id="prd1">
       <p class="rtecenter">Inclusive STEM Hackathon is a 24-hour hackathon where blind and visually impaired developers, industry professionals and CS students come together to work on exciting and challenging problems. The aim of the hackathon is to sensitize the engineers from potential IT companies as also the wider company mindset on the functioning and efficiency of persons with blindness and low vision by working together on the project, while also allowing the participants with disabilities an opportunity to learn from experienced professionals.
       </p>
@@ -96,9 +111,6 @@
 
       Besides coding for 24 Hrs., the hackathon is also a platform for blind participants to network with company representatives (such as HR representatives and hiring managers) to share their interests, aspirations and challenges in the recruitment process or once at job. This learning in turn can help companies evaluate their policies and improve them if needed.
       </p>
-
-      <button type="button" id="button1">Join 2019 Hackathon</button>
-
     </div>
 
   <div class="grid-container-underline-1"></div>
@@ -124,7 +136,25 @@
     <h2 class="headerproduct">Sponsors</h2>
   </div>
 
-   <div class="grid-container-sponsor">
+<div class="conatiner">
+   <div class="row">
+          <div class="col-lg-4" style="max-width:25%">
+            <a href="http://ehrc.iiitb.ac.in/" style="color:black;text-decoration:none;"><img id="Sponsors_image" src="Images/ehrc_logo.png" alt="Generic placeholder image" width="140" height="140"><!-- <p>IIIT-Bangalore</p> --></a>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4" style="max-width:25%">
+             <a href="http://visionaid.org/" style="color:black;text-decoration:none;"><img id="Sponsors_image" src="Images/VisionAid.png" width="140" height="140"><!-- <p>Vision Aid</p> --></a>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4" style="max-width:25%">
+             <a href="http://visionempowertrust.org/" style="color:black;text-decoration:none;"><img id="Sponsors_image" src="Images/visionempower.jpg" width="140" height="140"><!-- <p>Vision Empower Trust</p> --></a>
+          </div>
+          <div class="col-lg-4" style="max-width:25%; margin-top:1.5%;">
+             <a href="http://xrcvc.org/" style="color:black;text-decoration:none;"><img id="Sponsors_image" src="Images/xrcvc-logo.png" width="140" height="56"><!-- <p>XRCVC</p> --></a>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </div>
+
+ <!--   <div class="grid-container-sponsor">
 
 <table>
   <tr>
@@ -133,7 +163,7 @@
     <td><img id="Sponsors_image" src="Images/weather.png" alt="Sponsors"></td>
   </tr>
 </table>
-  </div>
+  </div> -->
   <div class="grid-container-underline-1"></div>
   
   <div class="grid-container-products">
@@ -277,7 +307,7 @@
     </div>
   </footer>
   <div class="footer-copyright">
-    <p>© NIkhil Kanojia </p>
+    <p>© NIkhil Kanojia</p>
   </div>
 
 
