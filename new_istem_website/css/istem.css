@@ -1,0 +1,187 @@
+html, body{
+  height:100%; margin:0;padding:0;color:black;}
+ 
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+.row-fluid {
+  height: 100%; display:table-cell; vertical-align: middle;
+}
+.centering {
+  float:none;
+  margin:0 auto;
+}
+.center{
+  text-align:center;
+}
+
+.bg-white{
+  background-color:white !important; 
+}
+.navbar-dark .navbar-nav .nav-link{
+ color:rgba(2,2,2)!important; 
+}
+.nav-link{
+   display:inline-block;
+}
+.right-nav a {
+  padding-right:.5rem;
+  padding-left:.5rem;
+  color:black;
+  text-decoration:none;
+
+}
+       /* .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+     }*/
+.dropdown-menu{
+  margin:1.15rem 0 0 !important;
+}
+       
+.marketing .col-lg-4 {
+  margin-bottom:0 !important;
+}
+
+.imageHeader{
+  position:relative;
+  padding:4rem 2rem;
+  overflow:hidden;
+  margin-bottom:5rem;
+  background-color:#e9ecef;
+  border-radius:.3rem;
+  height:75vh;
+  background: url('http://inclusivestem.org/new_istem_website/images/hack.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width:576px)
+{
+.imageHeader
+{padding:2rem 1rem}
+}
+
+.imageHeader-fluid{
+  padding-right:0;
+  padding-left:0;
+  border-radius:0
+}
+.uppercas{
+  text-transform: uppercase; 
+}
+
+.four-rows{
+max-width:25%;
+}
+
+.four-rows a {
+  color:black;
+  text-decoration:none;
+}
+.footer{
+  margin-top:5rem;
+}
+.simple-header{
+  height: 65vh;
+      }
+a {
+  color:black !important;
+  outline:0!important;
+  text-decoration:none;
+  -webkit-appearance:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  outline:0;
+   }
+
+  .btn-secondary {
+  color: #fff;
+  background-color:rgba(0,0,0,0)!important;
+  border-color:rgba(0,0,0,0)!important;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  opacity:0.5;
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+  opacity:0.5;
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #fff;
+   
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+   
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  opacity:0.5;
+}
+.layerc{
+  background: rgba(2, 2, 2, 0.5);
+  padding:0.75rem;
+  border-radius:15px;
+}
+ul.social-network {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  /* margin: 0 3px; */
+}
+
+.social-circle li a {
+  display: inline-block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  /*border: 1px solid #C0C0C0; */
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+.social-circle li i {
+  margin: 0;
+  /*line-height:30px;*/
+  line-height: 25px;
+  text-align: center;
+  color: black;
+}
+
+/* color of social icons on hover */
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoInstagram:hover i {
+  color: #ff8b5a;
+}
+
+.social-network a:hover {
+  border-color: #ff8b5a;
+}
+.fab {
+  color: f5ab6e;
+}
+body { padding-top: 70px; }
