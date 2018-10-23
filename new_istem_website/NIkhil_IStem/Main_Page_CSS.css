@@ -13,15 +13,42 @@ body {
 }
 
 img{
-    width: 250%;
+    width: 250% ;
     height:auto;
     margin-left: -15%;
-    margin-top: -14%;
+    margin-top: -14% ;
 }
 
 
+#Sponsors_image{
+     width: 25% !important;
+    margin-top: 21%;
+    margin-left: 60%;
+    margin-bottom: 24%;
+}
 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
 
+#button1{
+  vertical-align: middle;
+  font-size: 54%;
+  margin-left: 39.5%;
+}
+
+#selectHackathon{
+  vertical-align: middle;
+  font-size: 120%;
+  margin-left: 74%;
+}
+
+.grid-container-sponsor{
+  margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left: 19%;
+}
 
 /* To-Do tab CSS start */
 
@@ -58,11 +85,11 @@ padding: 0em !important;
 
 .grid-container-products{
   display: flex;
-  margin-top: 5%;
+  margin-top: 4%;
   width: 85%;
   padding-left: 4%;
-  margin-left: 8%;
-  margin-bottom: 8%;
+  margin-left: 4%;
+  margin-bottom: 4%;
 
 }
 
