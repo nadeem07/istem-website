@@ -1,5 +1,5 @@
 html, body{
-  height:100%; margin:0;padding:0;color:black;}
+  margin:0;padding:0;color:black;}
  
 .container-fluid{
   height:100%;
@@ -7,6 +7,32 @@ html, body{
   width: 100%;
   padding: 0;
 }
+
+.black{
+  background: black;
+}
+.banner{
+  background-image: url('../images/hack.jpg');
+  height: 90vh;
+  /* background-position-y: 30px; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-size: 100%; */
+  opacity: 0.5;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.banner-text{
+  color: white;
+  position: absolute;
+  /* background-color: white; */
+  z-index: 100;;
+  /* opacity: 1; */
+}
+
 .row-fluid {
   height: 100%; display:table-cell; vertical-align: middle;
 }
