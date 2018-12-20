@@ -94,3 +94,8 @@ background-attachment: fixed;
 .footer{
   padding:1rem 0.5rem;
 }
+
+.foot{
+  background-color: rgb(121, 121, 121);
+  padding:1rem 0.5rem;
+}
