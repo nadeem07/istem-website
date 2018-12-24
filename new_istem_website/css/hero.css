@@ -36,10 +36,10 @@ background-attachment: fixed;
   max-width: 800px;
 }
 .hero-body .title {
-  color: hsl(192,17%,99%) !important;
+  /* color: hsl(192,17%,99%) !important; */
 }
 .hero-body .subtitle {
-  color: hsl(192,17%,99%) !important;
+  /* color: hsl(192,17%,99%) !important; */
   padding-top: 2rem;
   line-height: 1.5;
 }
