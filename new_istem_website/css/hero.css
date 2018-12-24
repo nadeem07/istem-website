@@ -15,7 +15,7 @@ html,body {
   background: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
-  ), url('../images/meeting_home_1200.jpg') no-repeat center center fixed;
+  ), url('../images/group_home_1200.jpg') no-repeat center center fixed;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
