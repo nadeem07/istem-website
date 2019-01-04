@@ -131,13 +131,7 @@
             </div>
         </div>
         <br />
-        <div class="container">
-            <h1 class="title is-1" style="text-align:center"><span class="">I-Stem Hackathon 2018</span></h1>
-            <div class="column is-8 is-offset-2">
-                <iframe id="embed" width="100%" src="https://www.youtube.com/embed/oM6VAuawumI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-            </div>
-        </div>
+
         <br />
     </section>
 
@@ -145,39 +139,57 @@
     <section class="hero group is-medium">
         <div class="hero-body">
             <div class="container has-centered-text">
-                <h1 class="title is-1" style="color:white;">
+                <h1 class="title is-1" id="a-header" style="color:white;">
                     About Inclusive Stem Hackathon
                 </h1>
             </div>
         </div>
     </section>
 
-    <section class="hero is-bold is-fullheight">
+    <section class="hero is-bold is-medium">
         <div class="hero-body" style="padding-top: 0">
             <div class="column is-10 is-offset-1 has-centered-text">
                 <!-- <h1 class="title is-1">
                     About Inclusive Stem Hackathon
                 </h1> -->
-                <h2 class="subtitle" style="padding-top: 0">
-                    Inclusive STEM Hackathon is a 24-hour hackathon where blind and visually impaired developers,
+                <br />
+
+                <h2 class="subtitle" >
+                    <!-- Inclusive STEM Hackathon is a 24-hour hackathon where blind and visually impaired developers,
                     industry professionals and engineering students come together to work on exciting and challenging
                     problems. The aim of the hackathon is to sensitize the engineers from potential IT companies as
                     also the wider company mindset on the functioning and efficiency of persons with blindness and low
                     vision by working together on the project, while also allowing the participants with disabilities
-                    an opportunity to learn from experienced professionals.
+                    an opportunity to learn from experienced professionals. -->
+                    It is a 24-hour hackathon where blind and visually impaired developers,
+                    industry professionals and engineering students come together to work on exciting and challenging
+                    problems. 
                     <br />
                     <br />
-                    Unlike several other hackathons, the hackathon does not strictly enforce working on
+                    <!-- Unlike several other hackathons, the hackathon does not strictly enforce working on
                     accessibility-related projects. The final projects must be accessible for people with disabilities
-                    though. This learning, in turn, can help companies evaluate their policies and improve them if needed..
+                    though. This learning, in turn, can help companies evaluate their policies and improve them if needed.. -->
+                    Unlike other hackathons, we do not enforce working on
+                    accessibility-related projects. The final projects must be accessible for people with disabilities
+                    though. This learning, in turn, can help companies evaluate their policies and improve them if needed.
                     <br />
                     <br />
-                    Besides coding for 24 hrs., the hackathon is also a platform for blind participants to network with
-                    company representatives (such as HR representatives and hiring managers) to share their interests,
-                    aspirations and challenges in the recruitment process or once at job. This learning in turn can
+                    Besides coding for 24 hrs, the hackathon is also a platform for blind participants to network with
+                    company representatives to share their interests,
+                    aspirations and challenges in the recruitment process or once at job. This learning can also
                     help companies evaluate their policies and improve them if needed.
                 </h2>
             </div>
+            <br />
+            <br />
+
+            <!-- <div class="container"> -->
+                    <!-- <h1 class="title is-1" style="text-align:center"><span class="">I-Stem Hackathon 2018</span></h1> -->
+                    <div class="column is-8 is-offset-2">
+                        <iframe id="embed" width="100%" src="https://www.youtube.com/embed/oM6VAuawumI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+                    </div>
+                <!-- </div> -->
         </div>
     </section>
     <br />
@@ -187,7 +199,7 @@
     <section class="hero banner is-medium">
         <div class="hero-body">
             <div class="container has-centered-text">
-                <h1 class="title is-1" style="color:white;">
+                <h1 class="title is-1" id="a-header" style="color:white;">
                     Inclusive Stem Hackathon 2019                
                 </h1>
             </div>
@@ -370,24 +382,18 @@
 </body>
 <script>
     window.onload = function () {
-        console.log("loaded");
         var a = document.getElementById("embed");
         a.clientWidth = 200;
-        console.log(a.clientWidth);
         var h = a.clientWidth * 315 / 560;
         a.height = h;
-        // a.clientHeight = "300px";
 
     }
 
     window.onresize = function () {
-        console.log("loaded");
         var a = document.getElementById("embed");
         a.clientWidth = 200;
-        console.log(a.clientWidth);
         var h = a.clientWidth * 315 / 560;
         a.height = a.clientWidth * 315 / 560;
-        // a.clientHeight = "300px";
 
     }
 </script>
@@ -417,5 +423,23 @@ if ($navbarBurgers.length > 0) {
 }
 });
 </script>
+
+<script>
+    function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVisible;
+}
+    document.addEventListener("scroll",function(){
+        if(isScrolledIntoView(document.getElementById("a-header"))){
+            console.log("yessss");
+            document.getElementById("a-header").classList.add("animated");
+            // document.getElementById("a-header").classList.add("flipInX");
+        }
+    })
+</script>
+
 
 </html>
