@@ -300,3 +300,27 @@ background-attachment: fixed;
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.sr-only {
+  position: absolute;
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+  outline: 0;
+  }
+
+.navbar-item{
+  padding:1rem 0.5rem;
+}
+
+.navbar-link{
+  /* padding:1rem 2rem; */
+  padding-left: 0.5rem;
+}
