@@ -180,6 +180,7 @@ background-attachment: fixed;
 
 .accordion .content {
   opacity: 0;
+  display: none;
   padding: 0 1rem;
   max-height: 0;
   border-bottom: 1px solid #e5e5e5;
@@ -196,6 +197,7 @@ background-attachment: fixed;
 }
 
 .accordion .content.active {
+  display: block;
   opacity: 1;
   padding: 1rem;
   max-height: 100%;
@@ -323,4 +325,8 @@ background-attachment: fixed;
 .navbar-link{
   /* padding:1rem 2rem; */
   padding-left: 0.5rem;
+}
+
+.navbar-dropdown{
+  background-color: rgb(68, 68, 68);
 }
