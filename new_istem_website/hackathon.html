@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
     <meta name="description" content="Inclusive Stem (I-Stem) is a group of young persons who are blind or visually impaired from India pursuing science, technology, engineering and mathematics (STEM) education and careers.">
     <meta name="author" content="Inclusive STEM">
@@ -30,20 +30,20 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body cz-shortcut-listen="true">
 
     <section class="hero is-dark hackathon is-fullheight">
         <div class="hero-head">
-            <nav class="navbar is-dark">
+            <nav class="navbar is-dark" role="navigation">
                 <!-- <div class="container"> -->
                 <div class="navbar-brand">
                     <a class="" href="index.html">
                         <img src="images/logos/Istem_logo.png" height="55" width="55" alt="Logo">
                     </a>
-                    <span class="navbar-burger burger" data-target="navbarMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <span class="navbar-burger burger" data-target="navbarMenu" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </span>
                 </div>
                 <div id="navbarMenu" class="navbar-menu">
@@ -51,11 +51,11 @@
                         <a class="navbar-item">
                             About Us
                         </a>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">
+                        <div class="navbar-item has-dropdown">
+                            <a class="navbar-link"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 For Students
                             </a>
-                            <div class="navbar-dropdown">
+                            <div class="navbar-dropdown" aria-labelledby="navbarDropdown">
                                 <a class="navbar-item" href="training.html">
                                     Training
                                 </a>
@@ -67,21 +67,21 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">
+                        <div class="navbar-item has-dropdown">
+                            <a class="navbar-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 For Universities
                             </a>
-                            <div class="navbar-dropdown">
+                            <div class="navbar-dropdown" aria-labelledby="navbarDropdown">
                                 <a class="navbar-item" href="foruniversities.html">
                                     Resources for Universities
                                 </a>
                             </div>
                         </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">
+                        <div class="navbar-item has-dropdown">
+                            <a class="navbar-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 For Corporates
                             </a>
-                            <div class="navbar-dropdown">
+                            <div class="navbar-dropdown" aria-labelledby="navbarDropdown">
                                 <a class="navbar-item" href="forcompanies.html">
                                     Resources for Corporates
                                 </a>
@@ -106,7 +106,7 @@
                 <!-- </div> -->
             </nav>
         </div>
-        <div class="hero-body">
+        <div class="hero-body" role="banner">
             <div class="container has-text-centered">
                 <h1 class="title is-1 animated flipInX">
                     I-STEM Hackathon - 2019
@@ -175,7 +175,7 @@
     <section class="hero group is-medium">
         <div class="hero-body">
             <div class="container has-centered-text">
-                <h1 class="title is-1" id="a-header" style="color:white;">
+                <h1 class="title is-1" style="color:white;">
                     About Inclusive Stem Hackathon
                 </h1>
             </div>
@@ -191,24 +191,24 @@
                 <br />
 
                 <p class="content is-medium">
-                    <!-- Inclusive STEM Hackathon is a 24-hour hackathon where blind and visually impaired developers,
+                    Inclusive STEM Hackathon is a 24-hour hackathon where blind and visually impaired developers,
                     industry professionals and engineering students come together to work on exciting and challenging
                     problems. The aim of the hackathon is to sensitize the engineers from potential IT companies as
                     also the wider company mindset on the functioning and efficiency of persons with blindness and low
                     vision by working together on the project, while also allowing the participants with disabilities
-                    an opportunity to learn from experienced professionals. -->
-                    It is a 24-hour hackathon where blind and visually impaired developers,
+                    an opportunity to learn from experienced professionals.
+                    <!-- It is a 24-hour hackathon where blind and visually impaired developers,
                     industry professionals and engineering students come together to work on exciting and challenging
-                    problems.
+                    problems. -->
                     <br />
                     <br />
-                    <!-- Unlike several other hackathons, the hackathon does not strictly enforce working on
+                    Unlike several other hackathons, the hackathon does not strictly enforce working on
                     accessibility-related projects. The final projects must be accessible for people with disabilities
-                    though. This learning, in turn, can help companies evaluate their policies and improve them if needed.. -->
-                    Unlike other hackathons, we do not enforce working on
+                    though. This learning, in turn, can help companies evaluate their policies and improve them if needed..
+                    <!-- Unlike other hackathons, we do not enforce working on
                     accessibility-related projects. The final projects must be accessible for people with disabilities
                     though. This learning, in turn, can help companies evaluate their policies and improve them if
-                    needed.
+                    needed. -->
                     <br />
                     <br />
                     Besides coding for 24 hrs, the hackathon is also a platform for blind participants to network with
@@ -224,7 +224,7 @@
             <!-- <h1 class="title is-1" style="text-align:center"><span class="">I-Stem Hackathon 2018</span></h1> -->
             <div class="column is-8 is-offset-2">
                 <iframe id="embed" width="100%" src="https://www.youtube.com/embed/oM6VAuawumI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+                    allowfullscreen frameborder="0" scrolling="no" onload="resizeIframe(this)" aria-label="Hackathon 2018 Video"></iframe>
             </div>
             <!-- </div> -->
         </div>
@@ -236,7 +236,7 @@
     <section class="hero banner is-medium">
         <div class="hero-body">
             <div class="container has-centered-text">
-                <h1 class="title is-1" id="a-header" style="color:white;">
+                <h1 class="title is-1" style="color:white;">
                     Inclusive Stem Hackathon 2019
                 </h1>
             </div>
@@ -254,8 +254,8 @@
                     participants to develop high-impact products in 24 Hrs., while also appreciating the beauty of
                     diversity on their teams.<br /><br />
                     The event has been divided into two tracks this year.
-                    <ul style="list-style-type: disc;">
-                        <div class="column is-10 is-offset-1">
+                    <div class="column is-10 is-offset-1">
+                        <ul style="list-style-type: disc;">
                             <li>
                                 <p class="content is-medium">Regular Track: Consisting of teams of five composed of two
                                     blind developers with
@@ -272,8 +272,8 @@
                                     computer
                                     science student.</p>
                             </li>
+                        </ul>
                         </div>
-                    </ul>
                     <p class="content is-medium">Several side events including accessibility trainings, disability
                         sensitisation
                         workshops, mentorship events, panel discussions etc. will also be organised during the course
