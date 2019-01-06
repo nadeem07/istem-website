@@ -34,40 +34,76 @@
 
     <section class="hero is-dark hackathon-2018 is-medium">
         <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="" href="../">
-                            <img src="images/logos/Istem_logo.png" height="55" width="55" alt="Logo">
+            <nav class="navbar is-dark" role="navigation">
+                <!-- <div class="container"> -->
+                <div class="navbar-brand">
+                    <a class="" href="index.html">
+                        <img src="images/logos/Istem_logo.png" height="55" width="55" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="aboutus.html">
+                            About Us
                         </a>
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="navbar-item has-dropdown">
+                            <a class="navbar-link"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                For Students
+                            </a>
+                            <div class="navbar-dropdown" aria-labelledby="navbarDropdown">
+                                <a class="navbar-item" href="training.html">
+                                    Training
+                                </a>
+                                <a class="navbar-item" href="hackathon.html">
+                                    Hackathon
+                                </a>
+                                <a class="navbar-item" href="resources.html">
+                                    Resources and Other Opportunities
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown">
+                            <a class="navbar-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                For Universities
+                            </a>
+                            <div class="navbar-dropdown" aria-labelledby="navbarDropdown">
+                                <a class="navbar-item" href="foruniversities.html">
+                                    Resources for Universities
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown">
+                            <a class="navbar-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                For Corporates
+                            </a>
+                            <div class="navbar-dropdown" aria-labelledby="navbarDropdown">
+                                <a class="navbar-item" href="forcompanies.html">
+                                    Resources for Corporates
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <a class="navbar-item" href="">
+                            Resources and Events
+                        </a> -->
+                        <a class="navbar-item" href="getinvolved.html">
+                            Get Involved
+                        </a>
+                        <a class="navbar-item" href="advocacyandoutreach.html">
+                            Advocacy and Outreach
+                        </a>
+                        <span class="navbar-item">
+                            <a class="button is-white is-outlined is-small" href="contactus.html">
+                                <span>Contact Us</span>
+                            </a>
                         </span>
                     </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-active">
-                                Home
-                            </a>
-                            <a class="navbar-item">
-                                Resources and Events
-                            </a>
-                            <a class="navbar-item">
-                                Get Involved
-                            </a>
-                            <a class="navbar-item">
-                                Advocacy and Outreach
-                            </a>
-                            <span class="navbar-item">
-                                <a class="button is-white is-outlined is-small" href="">
-                                    <span>Contact Us</span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
                 </div>
+                <!-- </div> -->
             </nav>
         </div>
         <div class="hero-body">
@@ -419,22 +455,22 @@
                         <!-- <p class="title is-6"> Follow us on Social Media </p> -->
                         <a href="https://www.facebook.com/InclusiveSTEMIndia" target="_blank" class="icoFacebook" title="Facebook">
                             <span class="tag is-link">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-facebook-f"><span class="sr-only">Facebook</span></i>
                             </span>
                         </a>
                         <a href="https://twitter.com/istemindia" target="_blank" class="icoTwitter" title="Twitter">
                             <span class="tag is-info">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-twitter"><span class="sr-only">Twitter</span></i>
                             </span>
                         </a>
                         <!--<li><a href="https://www.linkedin.com/company/" target="_blank" class="icoLinkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>-->
                         <a href="https://www.youtube.com/channel/UCn4DUtssL2vzTfmyIQzuTgg" target="_blank" class="icoYoutube"
                             title="Youtube">
                             <span class="tag is-danger">
-                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-youtube"><span class="sr-only">Youtube</span></i>
                             </span>
                         </a>
-
+    
                     </div>
                 </div>
                 <div class="column is-3">
@@ -499,5 +535,110 @@
         dots[slideIndex - 1].className += " active";
     }
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+</script>
 
+<script>
+    function isScrolledIntoView(el) {
+        var rect = el.getBoundingClientRect();
+        var elemTop = rect.top;
+        var elemBottom = rect.bottom;
+        var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+        return isVisible;
+    }
+    document.addEventListener("scroll", function () {
+        if (isScrolledIntoView(document.getElementById("a-header"))) {
+            console.log("yessss");
+            document.getElementById("a-header").classList.add("animated");
+            // document.getElementById("a-header").classList.add("flipInX");
+        }
+    })
+</script>
+
+<script>
+// var dropdown = document.querySelectorAll('.has-dropdown');
+// console.log(dropdown);
+// dropdown.forEach(function(ele){ ele.addEventListener('click', function(event) {
+//   event.stopPropagation();
+//   dropdown.forEach(function(elem){
+//     elem.classList.remove('is-active')})
+    
+//   if(ele.classList.contains('is-active')){
+//   ele.classList.remove('is-active');
+//   }
+//   else{
+//       ele.classList.add('is-active')
+//   }
+// });
+// });
+
+'use strict';
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Dropdowns
+
+  var $dropdowns = getAll('.has-dropdown:not(.is-hoverable)');
+
+  if ($dropdowns.length > 0) {
+    $dropdowns.forEach(function ($el) {
+      $el.addEventListener('click', function (event) {
+        event.stopPropagation();
+        var active;
+        if($el.classList.contains('is-active')){
+            active = true;
+        } else {
+            active = false;
+        }
+        closeDropdowns();
+        if(active){
+        $el.setAttribute('aria-expanded', false);
+        $el.classList.remove('is-active');
+        } else {
+        $el.setAttribute('aria-expanded', true);
+        $el.classList.add('is-active');
+        }
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      closeDropdowns();
+    });
+  }
+
+  function closeDropdowns() {
+    $dropdowns.forEach(function ($el) {
+      $el.classList.remove('is-active');
+      $el.setAttribute('aria-expanded', false);
+    });
+  }
+
+  // Close dropdowns if ESC pressed
+  document.addEventListener('keydown', function (event) {
+    var e = event || window.event;
+    if (e.keyCode === 27) {
+      closeDropdowns();
+    }
+  });
+
+  // Functions
+
+  function getAll(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+  }
+});
+</script>
 </html>
