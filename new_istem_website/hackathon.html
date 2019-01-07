@@ -32,7 +32,7 @@
 
 <body cz-shortcut-listen="true">
 
-    <main class="hero is-dark hackathon is-fullheight">
+    <div class="hero is-dark hackathon is-fullheight">
         <div class="hero-head">
             <nav class="navbar is-dark" role="navigation">
                 <!-- <div class="container"> -->
@@ -125,9 +125,9 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 
-
+    <main>
     <section class="container features">
         <h1 class="title is-2 has-text-centered">
             Our Partners and Sponsers
@@ -178,7 +178,7 @@
     <section class="hero group is-medium">
         <div class="hero-body">
             <div class="container has-centered-text">
-                <h1 class="title is-1" style="color:white;">
+                <h1 class="title is-1" style="color:white;background-color: transparent;">
                     About Inclusive Stem Hackathon
                 </h1>
             </div>
@@ -228,7 +228,7 @@
             <!-- <h1 class="title is-1" style="text-align:center"><span class="">I-Stem Hackathon 2018</span></h1> -->
             <div class="column is-8 is-offset-2">
                 <iframe id="embed" width="100%" src="https://www.youtube.com/embed/oM6VAuawumI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen frameborder="0" scrolling="no" onload="resizeIframe(this)" aria-label="Hackathon 2018 Video"></iframe>
+                    allowfullscreen frameborder="0" scrolling="no" onload="resizeIframe(this)" aria-label="Hackathon 2018 Video" lang="en"></iframe>
             </div>
             <!-- </div> -->
         </div>
@@ -387,6 +387,7 @@
             </div>
         </div>
     </div>
+</main>
     <footer class="foot">
         <!-- <hr /> -->
         <div class="columns">
@@ -480,13 +481,13 @@
         var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
         return isVisible;
     }
-    document.addEventListener("scroll", function () {
-        if (isScrolledIntoView(document.getElementById("a-header"))) {
-            console.log("yessss");
-            document.getElementById("a-header").classList.add("animated");
-            // document.getElementById("a-header").classList.add("flipInX");
-        }
-    })
+    // document.addEventListener("scroll", function () {
+    //     if (isScrolledIntoView(document.getElementById("a-header"))) {
+    //         console.log("yessss");
+    //         document.getElementById("a-header").classList.add("animated");
+    //         // document.getElementById("a-header").classList.add("flipInX");
+    //     }
+    // })
 </script>
 
 <script>
