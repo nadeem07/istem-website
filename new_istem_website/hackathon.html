@@ -527,10 +527,10 @@
                     }
                     closeDropdowns();
                     if (active) {
-                        $el.setAttribute('aria-expanded', false);
+                        $el.setAttribute('aria-expanded', 'false');
                         $el.classList.remove('is-active');
                     } else {
-                        $el.setAttribute('aria-expanded', true);
+                        $el.setAttribute('aria-expanded', 'true');
                         $el.classList.add('is-active');
                     }
                 });
@@ -544,7 +544,7 @@
         function closeDropdowns() {
             $dropdowns.forEach(function ($el) {
                 $el.classList.remove('is-active');
-                $el.setAttribute('aria-expanded', false);
+                $el.setAttribute('aria-expanded', 'false');
             });
         }
 
