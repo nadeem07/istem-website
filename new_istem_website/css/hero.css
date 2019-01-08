@@ -50,6 +50,7 @@ background-attachment: fixed;
 
 p{
   font-family: 'Roboto', sans-serif;
+  color: black;
 }
 .hero-body .container {
   max-width: 800px;
@@ -345,4 +346,8 @@ p{
     padding: 0rem 2rem;
     /* background-color: red; */
   }
+}
+
+.modal-card-body{
+  padding: 1rem 2rem;
 }
