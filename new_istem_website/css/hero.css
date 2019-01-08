@@ -23,9 +23,9 @@ background-attachment: fixed;
 
 .hero.hackathon{
   background: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
-  ), url('../images/meeting_home_1200.jpg') no-repeat center center fixed;
+    rgba(0, 0, 0, 0.61),
+    rgba(0, 0, 0, 0.61)
+  ), url('../images/headers/group_header.jpg') no-repeat center center fixed;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -36,13 +36,21 @@ background-color:"red";
   background: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
-  ), url('../images/group_header.jpg') no-repeat center center fixed;
+  ), url('../images/group_home_1200.jpg') no-repeat center center fixed;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 }
 
+.title, .subtitle{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Lato', sans-serif;
+  color: #141414;
+}
 
+p{
+  font-family: 'Roboto', sans-serif;
+}
 .hero-body .container {
   max-width: 800px;
 }
